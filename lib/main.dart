@@ -31,7 +31,7 @@ class FocusGuardApp extends StatelessWidget {
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24),
-            side: BorderSide(color: Colors.white.withValues(alpha: 0.08)),
+            side: BorderSide(color: Colors.white.withOpacity(0.08)),
           ),
         ),
         useMaterial3: true,
@@ -260,7 +260,7 @@ class _FocusGuardHomePageState extends State<FocusGuardHomePage> {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1F6F5B).withValues(alpha: 0.2),
+                    color: const Color(0xFF1F6F5B).withOpacity(0.2),
                     borderRadius: BorderRadius.circular(14),
                   ),
                   child: const Icon(Icons.visibility_off_outlined),
@@ -344,7 +344,7 @@ class _FocusGuardHomePageState extends State<FocusGuardHomePage> {
                   Text(
                     _statusLine,
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white.withValues(alpha: 0.75)),
+                    style: TextStyle(color: Colors.white.withOpacity(0.75)),
                   ),
                 ],
               ),
@@ -355,7 +355,7 @@ class _FocusGuardHomePageState extends State<FocusGuardHomePage> {
               child: LinearProgressIndicator(
                 value: progress,
                 minHeight: 10,
-                backgroundColor: Colors.white.withValues(alpha: 0.08),
+                backgroundColor: Colors.white.withOpacity(0.08),
                 valueColor: const AlwaysStoppedAnimation<Color>(
                   Color(0xFF70D6A2),
                 ),
@@ -383,7 +383,7 @@ class _FocusGuardHomePageState extends State<FocusGuardHomePage> {
                       minimumSize: const Size.fromHeight(50),
                       foregroundColor: Colors.white,
                       side: BorderSide(
-                        color: Colors.white.withValues(alpha: 0.16),
+                        color: Colors.white.withOpacity(0.16),
                       ),
                     ),
                     child: const Text('Reset'),
@@ -522,7 +522,7 @@ class _FocusGuardHomePageState extends State<FocusGuardHomePage> {
               'are documented next steps rather than hidden claims.',
               style: TextStyle(
                 height: 1.45,
-                color: Colors.white.withValues(alpha: 0.82),
+                color: Colors.white.withOpacity(0.82),
               ),
             ),
           ],
@@ -545,8 +545,8 @@ class _MetricChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
-          color: Colors.white.withValues(alpha: 0.05),
-          border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+          color: Colors.white.withOpacity(0.05),
+          border: Border.all(color: Colors.white.withOpacity(0.08)),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -554,7 +554,7 @@ class _MetricChip extends StatelessWidget {
             Text(
               label,
               style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.7),
+                color: Colors.white.withOpacity(0.7),
                 fontSize: 12,
               ),
             ),
@@ -583,7 +583,7 @@ class _StatusChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.05),
+        color: Colors.white.withOpacity(0.05),
         borderRadius: BorderRadius.circular(999),
       ),
       child: Text(label),
@@ -606,9 +606,9 @@ class _RoadmapTile extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.04),
+        color: Colors.white.withOpacity(0.04),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.06)),
+        border: Border.all(color: Colors.white.withOpacity(0.06)),
       ),
       padding: const EdgeInsets.all(14),
       child: Row(
@@ -637,7 +637,7 @@ class _RoadmapTile extends StatelessWidget {
                   item.detail,
                   style: TextStyle(
                     height: 1.35,
-                    color: Colors.white.withValues(alpha: 0.72),
+                    color: Colors.white.withOpacity(0.72),
                   ),
                 ),
               ],
