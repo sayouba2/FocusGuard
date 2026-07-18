@@ -53,15 +53,22 @@ Short walkthrough:
 4. Watch the countdown and progress bar move.
 5. Tap `Pause` or `Reset` to stop the session.
 
-For a screenshot-style artifact, see [`screenshots/README.md`](screenshots/README.md). For a narrative demo, see [`demo.md`](demo.md).
+## Preview
+
+<p align="center">
+  <img src="preview/1.png" alt="FocusGuard running focus timer" width="280">
+  <img src="preview/2.png" alt="FocusGuard duration picker and roadmap" width="280">
+</p>
+
+For a narrative demo, see [`demo.md`](demo.md).
 
 ## Repository Layout
 
 - [`lib/main.dart`](lib/main.dart): the Flutter prototype UI and timer logic
 - [`android/`](android): the Android host app
+- [`preview/`](preview): current Android preview screenshots
 - [`issues.md`](issues.md): the roadmap issue seed list
 - [`demo.md`](demo.md): short demo walkthrough
-- [`screenshots/README.md`](screenshots/README.md): screenshot guidance
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): contribution workflow
 - [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md): community standards
 
@@ -75,4 +82,3 @@ For a screenshot-style artifact, see [`screenshots/README.md`](screenshots/READM
 ## Open-source stance
 
 FocusGuard is a personal productivity tool controlled by the device owner. It should remain transparent about permissions, local data, and the practical limits of Android app control.
-
